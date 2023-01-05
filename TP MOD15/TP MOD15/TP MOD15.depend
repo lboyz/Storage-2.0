@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1672607177 source:d:\telkom univ\sem 3\prak strukdat\tp mod15\tp mod15\tree.cpp
+	"Tree.h"
+
+1672603142 d:\telkom univ\sem 3\prak strukdat\tp mod15\tp mod15\tree.h
+	<iostream>
+
+1672608565 source:d:\telkom univ\sem 3\prak strukdat\tp mod15\tp mod15\main.cpp
+	<iostream>
+	"Tree.h"
+
