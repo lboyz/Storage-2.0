@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url(https://images.pexels.com/photos/5418830/pexels-photo-5418830.jpeg?cs=srgb&dl=pexels-elijah-o%27donnell-5418830.jpg&fm=jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-size: medium;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  font-size: large;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+hr {
+  position: center;
+  width: 175px;
+  color: rgb(255, 255, 255);
+}
+
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>TO: RYNE AFIFA</p>
+  </div>
+  <div class="middle">
+    <h3>★ HAPPY BIRTHDAY ★</h3>
+    <hr>
+<p id="demo">DI TUNGGU YAA</p>
+  </div>
+  <div class="bottomright">
+    <p>FROM: DUTA</p>
+  </div>
+
+
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 17, 2023 10:27").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "You're like a sister to me.</br>You've been there for me through\
+    all life's ups and downs, and I hope you know that I'm always here for you. Thanks for being such a wonderful\
+    best friend. I hope you have a great birthday, and the year ahead is the best yet!</br><p><b>HAPPY BIRTHDAY</br>MY FRIEND</b></p>";
+  }
+}, 1000);
+</script>
+</body>
+</html>
+
